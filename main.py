@@ -5,7 +5,7 @@ nombres = ['Harry Houdini', 'Newton', 'David Blaine', 'Hawking', 'Messi', 'Telle
 
 #funcion para magos
 def hacer_grandioso(magos):
-    for i in ran(len(magos)):
+    for i in range(len(magos)):
         magos[i] = 'El gran ' + magos[i]
 
 #funcion nombres lista
@@ -22,4 +22,16 @@ def nombre_grupos(nombres):
 for nombre in nombres:
     if nombre in ['Harry Houdini', 'David Blaine', 'Teller']:
         magos.append(nombre)
-    elif nombre in     
+    elif nombre in ['Newton', 'Hawking', 'Einstein']:
+        cientificos.append(nombre)
+    else:
+        otros.apprend(nombre)
+
+return magos, cientificos, otros
+
+#imprimir lista completa
+print("Lista completa: ")
+print_nombres(nombres)
+
+#separar nombres
+magos, cientificos, otros = nombre_grupos(nombres)

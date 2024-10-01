@@ -9,12 +9,12 @@ def hacer_grandioso(magos):
         magos[i] = 'El gran ' + magos[i]
 
 #funcion nombres lista
-def print_nombres(lista):
+def imprimir_lista(lista):
     for nombre in lista:
         print(nombre)
 
 #separar nombres en categorias
-def nombre_grupos(nombres):
+def separar_grupos(nombres):
     magos = []
     cientificos = []
     otros = []
